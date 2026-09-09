@@ -62,9 +62,10 @@ sites:
 
 status-website:
   cname: status.neurometric.ai
+  userContentBaseUrl: https://raw.githubusercontent.com/NeurometricAI/status/main
   name: Neurometric Status
-  logoUrl: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric.svg
-  faviconSvg: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric.svg
+  logoUrl: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric-mark.svg
+  faviconSvg: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric-mark.svg
   theme: light
   introTitle: "**Neurometric** System Status"
   introMessage: |
