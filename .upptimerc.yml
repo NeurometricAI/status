@@ -86,69 +86,313 @@ status-website:
       --color-brand-pink: #d64f91;
       --color-brand-pink-hover: #c1407e;
       --color-brand-pink-light: #fdf0f5;
+      --color-brand-pink-mid: #f2c4da;
       --color-dark: #111113;
       --color-gray: #555560;
+      --color-gray-light: #f7f7f8;
       --color-border: #e6e6ea;
+      --color-green: #10b981;
+      --color-green-light: #ecfdf5;
+      --color-green-border: #a7f3d0;
+      --color-red: #ef4444;
+      --color-red-light: #fef2f2;
+      --color-yellow: #f59e0b;
+
+      /* Upptime Theme Variable Overrides */
+      --body-background-color: #fafafa;
+      --body-text-color: var(--color-dark);
+      --card-background-color: #ffffff;
+      --card-border-color: var(--color-border);
+      --nav-background-color: #ffffff;
+      --nav-border-bottom-color: var(--color-border);
+      --nav-current-border-bottom-color: var(--color-brand-pink);
+      --up-border-left-color: var(--color-green);
+      --down-border-left-color: var(--color-red);
+      --down-background-color: var(--color-red-light);
+      --degraded-border-left-color: var(--color-yellow);
+      --tag-color: #ffffff;
+      --tag-up-background-color: var(--color-green);
+      --tag-down-background-color: var(--color-red);
+      --tag-degraded-background-color: var(--color-yellow);
+      --change-background-color: var(--color-brand-pink-light);
     }
 
     body {
       font-family: var(--font-family) !important;
       color: var(--color-dark) !important;
-      background-color: #ffffff !important;
+      background-color: #fafafa !important;
+      -webkit-font-smoothing: antialiased;
     }
 
-    header nav {
+    /* Top Navigation Bar */
+    nav {
+      background: #ffffff !important;
       border-bottom: 1px solid var(--color-border) !important;
+      padding: 0.75rem 2rem !important;
+      margin-bottom: 2.5rem !important;
     }
 
-    header nav a {
-      font-family: var(--font-family) !important;
-      color: var(--color-gray) !important;
-      transition: color 0.15s ease !important;
+    nav .container {
+      max-width: 960px !important;
+      margin: 0 auto !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 0 !important;
     }
 
-    header nav a:hover, header nav a.current {
-      color: var(--color-brand-pink) !important;
-      border-color: var(--color-brand-pink) !important;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
+    nav .logo {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      padding: 0 !important;
+      margin: 0 !important;
       font-family: var(--font-family) !important;
       font-weight: 600 !important;
+      font-size: 1.1rem !important;
       color: var(--color-dark) !important;
+      text-decoration: none !important;
     }
 
-    a {
-      color: var(--color-brand-pink) !important;
-    }
-
-    a:hover {
-      color: var(--color-brand-pink-hover) !important;
-    }
-
-    .tag, .badge {
+    nav .logo img {
+      width: 32px !important;
+      height: 32px !important;
+      max-width: 32px !important;
+      max-height: 32px !important;
+      margin-right: 0 !important;
       border-radius: 6px !important;
+      display: block !important;
+      object-fit: contain !important;
     }
 
-    .card {
+    nav ul {
+      display: flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+    }
+
+    nav ul li a {
+      font-family: var(--font-family) !important;
+      font-size: 0.9rem !important;
+      font-weight: 500 !important;
+      color: var(--color-gray) !important;
+      text-decoration: none !important;
+      padding: 0.5rem 0.9rem !important;
+      border-radius: 6px !important;
+      border-bottom: none !important;
+      transition: all 0.15s ease !important;
+      display: inline-block !important;
+    }
+
+    nav ul li a:hover {
+      color: var(--color-dark) !important;
+      background: var(--color-gray-light) !important;
+    }
+
+    nav ul li a[aria-current="page"] {
+      color: var(--color-brand-pink) !important;
+      background: var(--color-brand-pink-light) !important;
+      font-weight: 600 !important;
+      border-bottom: none !important;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 960px !important;
+      margin: 0 auto !important;
+      padding: 0 1.5rem !important;
+    }
+
+    /* Header Section */
+    header {
+      margin-bottom: 2rem !important;
+    }
+
+    header h1 {
+      font-family: var(--font-family) !important;
+      font-size: 2rem !important;
+      font-weight: 700 !important;
+      color: var(--color-dark) !important;
+      letter-spacing: -0.02em !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    header p.lead {
+      font-family: var(--font-family) !important;
+      font-size: 1.05rem !important;
+      color: var(--color-gray) !important;
+      line-height: 1.5 !important;
+    }
+
+    /* "All Systems Operational" Banner */
+    article.up:not(.graph) {
+      background: var(--color-green-light) !important;
+      border: 1px solid var(--color-green-border) !important;
+      border-left: 4px solid var(--color-green) !important;
+      border-radius: 8px !important;
+      padding: 1rem 1.25rem !important;
+      font-weight: 600 !important;
+      color: #065f46 !important;
+      font-size: 1rem !important;
+      margin-bottom: 2rem !important;
+    }
+
+    /* Live Status Heading & Duration Filter Pills */
+    .f {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 1rem !important;
+    }
+
+    .f h2 {
+      font-family: var(--font-family) !important;
+      font-size: 1.25rem !important;
+      font-weight: 600 !important;
+      color: var(--color-dark) !important;
+      margin: 0 !important;
+    }
+
+    form.f.r {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 4px !important;
+      background: #f1f1f4 !important;
+      padding: 3px !important;
+      border-radius: 8px !important;
+    }
+
+    form.f.r > div {
+      display: inline-flex !important;
+    }
+
+    form.f.r input[type="radio"] {
+      display: none !important;
+    }
+
+    form.f.r label {
+      display: inline-block !important;
+      margin: 0 !important;
+      padding: 4px 12px !important;
+      font-family: var(--font-family) !important;
+      font-size: 0.825rem !important;
+      font-weight: 500 !important;
+      color: var(--color-gray) !important;
+      cursor: pointer !important;
+      border-radius: 6px !important;
+      transition: all 0.15s ease !important;
+    }
+
+    form.f.r input[type="radio"]:checked + label {
+      background: #ffffff !important;
+      color: var(--color-dark) !important;
+      font-weight: 600 !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    /* Service Cards (Articles) */
+    article.link {
+      background: #ffffff !important;
       border: 1px solid var(--color-border) !important;
-      border-radius: 12px !important;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-      transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+      border-radius: 10px !important;
+      padding: 1.25rem 1.5rem !important;
+      margin-bottom: 0.75rem !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+      transition: all 0.2s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
     }
 
-    .card:hover {
-      box-shadow: 0 4px 16px rgba(214, 79, 145, 0.08) !important;
+    article.link:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+      border-color: #d1d1d8 !important;
     }
 
-    .status-up {
-      color: #10b981 !important;
+    article.up.link {
+      border-left: 4px solid var(--color-green) !important;
     }
 
-    .status-down {
-      color: #ef4444 !important;
+    article.down.link {
+      border-left: 4px solid var(--color-red) !important;
     }
 
-    .status-degraded {
-      color: #f59e0b !important;
+    article.degraded.link {
+      border-left: 4px solid var(--color-yellow) !important;
+    }
+
+    /* Card Typography & Layout */
+    article h4 {
+      font-family: var(--font-family) !important;
+      font-size: 1.05rem !important;
+      font-weight: 600 !important;
+      color: var(--color-dark) !important;
+      margin-bottom: 0.4rem !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+
+    article h4 a {
+      color: var(--color-dark) !important;
+      text-decoration: none !important;
+      font-weight: 600 !important;
+    }
+
+    article h4 img.icon {
+      height: 18px !important;
+      width: 18px !important;
+      border-radius: 4px !important;
+      margin-right: 2px !important;
+      vertical-align: middle !important;
+      transform: none !important;
+    }
+
+    article > div {
+      font-family: var(--font-family) !important;
+      font-size: 0.875rem !important;
+      color: var(--color-gray) !important;
+      line-height: 1.5 !important;
+    }
+
+    article span.data {
+      color: var(--color-dark) !important;
+      font-weight: 600 !important;
+    }
+
+    /* Sparkline Graphs in Cards */
+    article.graph {
+      background-size: 220px 55px !important;
+      background-position: calc(100% - 1.5rem) center !important;
+      background-repeat: no-repeat !important;
+    }
+
+    @media (max-width: 640px) {
+      article.graph {
+        background-size: 140px 40px !important;
+      }
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem !important;
+      padding-top: 2rem !important;
+      border-top: 1px solid var(--color-border) !important;
+      text-align: center !important;
+      font-size: 0.85rem !important;
+      color: var(--color-gray) !important;
+    }
+
+    footer a {
+      color: var(--color-brand-pink) !important;
+      text-decoration: none !important;
+    }
+
+    footer a:hover {
+      color: var(--color-brand-pink-hover) !important;
+      text-decoration: underline !important;
     }
