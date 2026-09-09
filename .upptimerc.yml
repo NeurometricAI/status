@@ -1,0 +1,154 @@
+# Change these first
+owner: NeurometricAI
+repo: status
+
+# Sites to monitor
+sites:
+  - name: Website (www)
+    url: https://www.neurometric.ai
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 307
+      - 308
+      - 429
+
+  - name: API Gateway
+    url: https://api.neurometric.ai/health
+    method: GET
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+  - name: Wharf (Model Gateway)
+    url: https://wharf.neurometric.ai/health
+    method: GET
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+  - name: SLM Marketplace
+    url: https://marketplace.neurometric.ai
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+  - name: TTC Leaderboard
+    url: https://leaderboard.neurometric.ai
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+  - name: Task Explorer (Task Router)
+    url: https://taskrouter.neurometric.ai
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+  - name: Inference Studio
+    url: https://studio.neurometric.ai
+    headers:
+      - "User-Agent: Mozilla/5.0 (compatible; NeurometricUptime/1.0; +https://status.neurometric.ai)"
+    expectedStatusCodes:
+      - 200
+
+status-website:
+  cname: status.neurometric.ai
+  name: Neurometric Status
+  logoUrl: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric.svg
+  faviconSvg: https://raw.githubusercontent.com/NeurometricAI/status/main/assets/neurometric.svg
+  theme: light
+  introTitle: "**Neurometric** System Status"
+  introMessage: |
+    Real-time status monitoring and incident tracking for **Neurometric** distributed AI infrastructure, APIs, and web services.
+  navbar:
+    - title: Status
+      href: /
+    - title: Neurometric Home
+      href: https://www.neurometric.ai
+    - title: Studio
+      href: https://studio.neurometric.ai
+    - title: GitHub
+      href: https://github.com/NeurometricAI
+  css: |
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+    :root {
+      --font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --color-brand-pink: #d64f91;
+      --color-brand-pink-hover: #c1407e;
+      --color-brand-pink-light: #fdf0f5;
+      --color-dark: #111113;
+      --color-gray: #555560;
+      --color-border: #e6e6ea;
+    }
+
+    body {
+      font-family: var(--font-family) !important;
+      color: var(--color-dark) !important;
+      background-color: #ffffff !important;
+    }
+
+    header nav {
+      border-bottom: 1px solid var(--color-border) !important;
+    }
+
+    header nav a {
+      font-family: var(--font-family) !important;
+      color: var(--color-gray) !important;
+      transition: color 0.15s ease !important;
+    }
+
+    header nav a:hover, header nav a.current {
+      color: var(--color-brand-pink) !important;
+      border-color: var(--color-brand-pink) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family) !important;
+      font-weight: 600 !important;
+      color: var(--color-dark) !important;
+    }
+
+    a {
+      color: var(--color-brand-pink) !important;
+    }
+
+    a:hover {
+      color: var(--color-brand-pink-hover) !important;
+    }
+
+    .tag, .badge {
+      border-radius: 6px !important;
+    }
+
+    .card {
+      border: 1px solid var(--color-border) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+      transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(214, 79, 145, 0.08) !important;
+    }
+
+    .status-up {
+      color: #10b981 !important;
+    }
+
+    .status-down {
+      color: #ef4444 !important;
+    }
+
+    .status-degraded {
+      color: #f59e0b !important;
+    }
