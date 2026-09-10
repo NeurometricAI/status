@@ -31,7 +31,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      workflows: write
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
     steps:
