@@ -60,6 +60,12 @@ sites:
     expectedStatusCodes:
       - 200
 
+workflowSchedule:
+  # Commit a response-time data point on every check (every 5 min) so the
+  # response-time graph and uptime history build a dense series instead of
+  # only recording on status changes.
+  responseTime: "*/5 * * * *"
+
 status-website:
   cname: status.neurometric.ai
   name: Neurometric Status
