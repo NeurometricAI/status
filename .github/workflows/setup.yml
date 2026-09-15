@@ -51,12 +51,6 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-      - name: Update template
-        uses: upptime/uptime-monitor@v1.44.0
-        with:
-          command: "update-template"
-        env:
-          GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Update response time
         uses: upptime/uptime-monitor@v1.44.0
         with:
@@ -90,12 +84,25 @@ jobs:
           command: "graphs"
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-      - name: Generate site
-        uses: upptime/uptime-monitor@v1.44.0
+      - name: Setup Node.js for site build
+        uses: actions/setup-node@v6
         with:
-          command: "site"
-        env:
-          GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+          node-version: "20"
+      - name: Build site from vendored theme
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p site
+          cp -r theme/* site/
+          cd site
+          npm ci --no-audit --no-fund --loglevel=error
+          npm run export
+          mkdir -p status-page/__sapper__/export
+          cp -r __sapper__/export/* status-page/__sapper__/export
+          cd ..
+          if [ -d assets ] && [ -n "$(ls -A assets)" ]; then
+            cp -r assets/* site/status-page/__sapper__/export/
+          fi
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy
         with:
