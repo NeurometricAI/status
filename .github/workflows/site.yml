@@ -54,12 +54,30 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-      - name: Generate site
-        uses: upptime/uptime-monitor@v1.44.0
+      # Build the status page from the vendored theme in `theme/` instead of
+      # `npm i @upptime/status-page`. This repo carries a patched copy of the
+      # theme (see theme/README.md) so the detail-page time-range selector and
+      # graph bucketing work. Keep this in sync with the `site` command in
+      # upptime/uptime-monitor's src/site.ts.
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          command: "site"
-        env:
-          GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+          node-version: "20"
+      - name: Build site from vendored theme
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p site
+          cp -r theme/* site/
+          cd site
+          npm ci --no-audit --no-fund --loglevel=error
+          npm run export
+          mkdir -p status-page/__sapper__/export
+          cp -r __sapper__/export/* status-page/__sapper__/export
+          cd ..
+          if [ -d assets ] && [ -n "$(ls -A assets)" ]; then
+            cp -r assets/* site/status-page/__sapper__/export/
+          fi
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy
         with:
