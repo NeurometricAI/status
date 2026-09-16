@@ -19,6 +19,7 @@ on:
   push:
     paths:
       - "assets/**"
+      - "theme/**"
   schedule:
     - cron: "0 1 * * *"
   repository_dispatch:
