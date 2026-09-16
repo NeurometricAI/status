@@ -18,7 +18,6 @@
   let width = 800;
 
   let selected = range;
-  $: if (range !== selected) selected = range;
 
   // How far back each range looks, and the bucket size used to roll up the
   // per-commit points so the graph stays readable at any range.
@@ -65,6 +64,7 @@
 
   const load = async () => {
     loading = true;
+    const spec = RANGE_SPECS[selected] || RANGE_SPECS.week;
     try {
       const commits = await fetchCommits(spec.windowMs);
       const points = commits
