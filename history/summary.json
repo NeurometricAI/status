@@ -22,19 +22,19 @@
     "url": "https://api.neurometric.ai/health",
     "icon": "https://icons.duckduckgo.com/ip3/api.neurometric.ai.ico",
     "slug": "api-gateway",
-    "status": "down",
+    "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "99.92%",
-    "uptimeWeek": "99.99%",
+    "uptimeDay": "99.87%",
+    "uptimeWeek": "99.98%",
     "uptimeMonth": "99.99%",
     "uptimeYear": "99.99%",
     "time": 276,
-    "timeDay": 288,
+    "timeDay": 287,
     "timeWeek": 280,
     "timeMonth": 276,
     "timeYear": 276,
     "dailyMinutesDown": {
-      "2026-09-21": 1
+      "2026-09-21": 2
     }
   },
   {
@@ -42,12 +42,12 @@
     "url": "https://wharf.neurometric.ai/health",
     "icon": "https://icons.duckduckgo.com/ip3/wharf.neurometric.ai.ico",
     "slug": "wharf-model-gateway",
-    "status": "down",
-    "uptime": "99.94%",
-    "uptimeDay": "99.93%",
-    "uptimeWeek": "99.89%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.94%",
+    "status": "up",
+    "uptime": "99.93%",
+    "uptimeDay": "99.88%",
+    "uptimeWeek": "99.88%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.93%",
     "time": 374,
     "timeDay": 326,
     "timeWeek": 396,
@@ -55,7 +55,7 @@
     "timeYear": 374,
     "dailyMinutesDown": {
       "2026-09-15": 10,
-      "2026-09-21": 1
+      "2026-09-21": 2
     }
   },
   {
@@ -63,19 +63,19 @@
     "url": "https://marketplace.neurometric.ai",
     "icon": "https://icons.duckduckgo.com/ip3/marketplace.neurometric.ai.ico",
     "slug": "slm-marketplace",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "99.99%",
+    "uptimeDay": "99.89%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 323,
-    "timeDay": 337,
-    "timeWeek": 326,
+    "timeDay": 336,
+    "timeWeek": 325,
     "timeMonth": 323,
     "timeYear": 323,
     "dailyMinutesDown": {
-      "2026-09-21": 1
+      "2026-09-21": 2
     }
   },
   {
@@ -101,14 +101,14 @@
     "url": "https://taskrouter.neurometric.ai",
     "icon": "https://icons.duckduckgo.com/ip3/taskrouter.neurometric.ai.ico",
     "slug": "task-explorer-task-router",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.95%",
+    "status": "up",
+    "uptime": "99.99%",
+    "uptimeDay": "99.90%",
     "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 1527,
-    "timeDay": 1507,
+    "timeDay": 1508,
     "timeWeek": 1531,
     "timeMonth": 1527,
     "timeYear": 1527,
