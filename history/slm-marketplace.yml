@@ -1,7 +1,7 @@
 url: https://marketplace.neurometric.ai
-status: up
-code: 200
-responseTime: 529
-lastUpdated: 2026-09-21T12:28:47.577Z
+status: down
+code: 503
+responseTime: 319
+lastUpdated: 2026-09-21T12:47:40.137Z
 startTime: 2026-09-09T13:20:02.265Z
 generator: Upptime <https://github.com/upptime/upptime>
