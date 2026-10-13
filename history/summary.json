@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.neurometric.ai.ico",
     "slug": "website-www",
     "status": "up",
-    "uptime": "99.96%",
+    "uptime": "99.97%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
-    "uptimeYear": "99.96%",
-    "time": 222,
-    "timeDay": 536,
-    "timeWeek": 310,
-    "timeMonth": 224,
-    "timeYear": 222,
+    "uptimeYear": "99.97%",
+    "time": 223,
+    "timeDay": 264,
+    "timeWeek": 318,
+    "timeMonth": 226,
+    "timeYear": 223,
     "dailyMinutesDown": {
       "2026-09-23": 17
     }
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 297,
-    "timeDay": 382,
-    "timeWeek": 367,
-    "timeMonth": 299,
-    "timeYear": 297,
+    "time": 298,
+    "timeDay": 342,
+    "timeWeek": 372,
+    "timeMonth": 301,
+    "timeYear": 298,
     "dailyMinutesDown": {
       "2026-09-21": 2
     }
@@ -50,11 +50,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.97%",
     "uptimeYear": "99.98%",
-    "time": 383,
-    "timeDay": 678,
-    "timeWeek": 448,
+    "time": 381,
+    "timeDay": 322,
+    "timeWeek": 445,
     "timeMonth": 386,
-    "timeYear": 383,
+    "timeYear": 381,
     "dailyMinutesDown": {
       "2026-09-15": 10,
       "2026-09-21": 2
@@ -72,9 +72,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 344,
-    "timeDay": 518,
-    "timeWeek": 411,
-    "timeMonth": 345,
+    "timeDay": 348,
+    "timeWeek": 412,
+    "timeMonth": 346,
     "timeYear": 344,
     "dailyMinutesDown": {
       "2026-09-21": 2
@@ -92,7 +92,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 485,
-    "timeDay": 645,
+    "timeDay": 482,
     "timeWeek": 549,
     "timeMonth": 487,
     "timeYear": 485,
@@ -109,11 +109,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.96%",
-    "time": 1543,
-    "timeDay": 864,
-    "timeWeek": 780,
-    "timeMonth": 1546,
-    "timeYear": 1543,
+    "time": 1525,
+    "timeDay": 713,
+    "timeWeek": 765,
+    "timeMonth": 1526,
+    "timeYear": 1525,
     "dailyMinutesDown": {
       "2026-09-21": 18
     }
@@ -130,9 +130,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 331,
-    "timeDay": 434,
-    "timeWeek": 387,
-    "timeMonth": 332,
+    "timeDay": 335,
+    "timeWeek": 386,
+    "timeMonth": 333,
     "timeYear": 331,
     "dailyMinutesDown": {}
   }
