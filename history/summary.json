@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.97%",
-    "time": 227,
-    "timeDay": 340,
-    "timeWeek": 348,
-    "timeMonth": 234,
-    "timeYear": 227,
+    "time": 228,
+    "timeDay": 247,
+    "timeWeek": 322,
+    "timeMonth": 235,
+    "timeYear": 228,
     "dailyMinutesDown": {
       "2026-09-23": 17
     }
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 300,
-    "timeDay": 384,
-    "timeWeek": 387,
-    "timeMonth": 306,
-    "timeYear": 300,
+    "time": 301,
+    "timeDay": 322,
+    "timeWeek": 364,
+    "timeMonth": 308,
+    "timeYear": 301,
     "dailyMinutesDown": {
       "2026-09-21": 2
     }
@@ -48,13 +48,13 @@
     "uptime": "99.98%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.97%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
-    "time": 384,
-    "timeDay": 484,
-    "timeWeek": 479,
-    "timeMonth": 394,
-    "timeYear": 384,
+    "time": 383,
+    "timeDay": 335,
+    "timeWeek": 449,
+    "timeMonth": 375,
+    "timeYear": 383,
     "dailyMinutesDown": {
       "2026-09-15": 10,
       "2026-09-21": 2
@@ -72,8 +72,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 344,
-    "timeDay": 333,
-    "timeWeek": 421,
+    "timeDay": 339,
+    "timeWeek": 396,
     "timeMonth": 350,
     "timeYear": 344,
     "dailyMinutesDown": {
@@ -91,11 +91,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 488,
-    "timeDay": 570,
-    "timeWeek": 573,
+    "time": 487,
+    "timeDay": 477,
+    "timeWeek": 540,
     "timeMonth": 495,
-    "timeYear": 488,
+    "timeYear": 487,
     "dailyMinutesDown": {}
   },
   {
@@ -104,16 +104,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/taskrouter.neurometric.ai.ico",
     "slug": "task-explorer-task-router",
     "status": "up",
-    "uptime": "99.96%",
+    "uptime": "99.97%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
-    "uptimeYear": "99.96%",
-    "time": 1484,
-    "timeDay": 763,
-    "timeWeek": 778,
-    "timeMonth": 1475,
-    "timeYear": 1484,
+    "uptimeYear": "99.97%",
+    "time": 1460,
+    "timeDay": 689,
+    "timeWeek": 767,
+    "timeMonth": 1444,
+    "timeYear": 1460,
     "dailyMinutesDown": {
       "2026-09-21": 18
     }
@@ -129,11 +129,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 333,
-    "timeDay": 424,
-    "timeWeek": 404,
-    "timeMonth": 339,
-    "timeYear": 333,
+    "time": 334,
+    "timeDay": 369,
+    "timeWeek": 385,
+    "timeMonth": 341,
+    "timeYear": 334,
     "dailyMinutesDown": {}
   }
 ]
