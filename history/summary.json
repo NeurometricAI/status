@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
     "time": 238,
-    "timeDay": 210,
+    "timeDay": 222,
     "timeWeek": 212,
-    "timeMonth": 266,
+    "timeMonth": 265,
     "timeYear": 238,
     "dailyMinutesDown": {
       "2026-09-23": 17
@@ -31,8 +31,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 312,
-    "timeDay": 278,
-    "timeWeek": 286,
+    "timeDay": 289,
+    "timeWeek": 283,
     "timeMonth": 336,
     "timeYear": 312,
     "dailyMinutesDown": {
@@ -50,11 +50,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
-    "time": 389,
-    "timeDay": 323,
-    "timeWeek": 330,
+    "time": 388,
+    "timeDay": 334,
+    "timeWeek": 328,
     "timeMonth": 400,
-    "timeYear": 389,
+    "timeYear": 388,
     "dailyMinutesDown": {
       "2026-09-15": 10,
       "2026-09-21": 2
@@ -71,11 +71,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 355,
+    "time": 354,
     "timeDay": 322,
-    "timeWeek": 330,
-    "timeMonth": 376,
-    "timeYear": 355,
+    "timeWeek": 327,
+    "timeMonth": 374,
+    "timeYear": 354,
     "dailyMinutesDown": {
       "2026-09-21": 2
     }
@@ -91,11 +91,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 498,
-    "timeDay": 453,
-    "timeWeek": 471,
-    "timeMonth": 520,
-    "timeYear": 498,
+    "time": 496,
+    "timeDay": 441,
+    "timeWeek": 463,
+    "timeMonth": 518,
+    "timeYear": 496,
     "dailyMinutesDown": {}
   },
   {
@@ -104,16 +104,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/taskrouter.neurometric.ai.ico",
     "slug": "task-explorer-task-router",
     "status": "up",
-    "uptime": "99.97%",
+    "uptime": "99.98%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "99.97%",
-    "time": 1238,
-    "timeDay": 572,
-    "timeWeek": 599,
-    "timeMonth": 870,
-    "timeYear": 1238,
+    "uptimeYear": "99.98%",
+    "time": 1219,
+    "timeDay": 573,
+    "timeWeek": 587,
+    "timeMonth": 815,
+    "timeYear": 1219,
     "dailyMinutesDown": {
       "2026-09-21": 18
     }
@@ -129,11 +129,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 336,
-    "timeDay": 312,
-    "timeWeek": 317,
-    "timeMonth": 350,
-    "timeYear": 336,
+    "time": 335,
+    "timeDay": 296,
+    "timeWeek": 312,
+    "timeMonth": 348,
+    "timeYear": 335,
     "dailyMinutesDown": {}
   }
 ]
